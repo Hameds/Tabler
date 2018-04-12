@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Hamed Saeedi</authors>
+    <owners>Hamed Saeedi</owners>
+    <licenseUrl>https://github.com/Hameds/Tabler/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Hameds/Tabler</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Hameds/Tabler/master/tabler-icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Tabler Dashboard UI Kit</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags></tags>
+  </metadata>
+</package>

@@ -1,0 +1,560 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22A77497-A4E2-4BEE-9ED8-BE27C2C53364}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tabler</RootNamespace>
+    <AssemblyName>Tabler</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Tabler\fonts\feather\feather-webfont.eot" />
+    <Content Include="Content\Tabler\fonts\feather\feather-webfont.ttf" />
+    <Content Include="Content\Tabler\fonts\feather\feather-webfont.woff" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\materialdesignicons\materialdesignicons-webfont.eot" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\materialdesignicons\materialdesignicons-webfont.ttf" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\materialdesignicons\materialdesignicons-webfont.woff" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\materialdesignicons\materialdesignicons-webfont.woff2" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\simple-line-icons\Simple-Line-Icons.eot" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\simple-line-icons\Simple-Line-Icons.ttf" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\simple-line-icons\Simple-Line-Icons.woff" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\simple-line-icons\Simple-Line-Icons.woff2" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\themify\themify.eot" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\themify\themify.ttf" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\themify\themify.woff" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\weathericons\weathericons-regular-webfont.eot" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\weathericons\weathericons-regular-webfont.ttf" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\weathericons\weathericons-regular-webfont.woff" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\weathericons\weathericons-regular-webfont.woff2" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Content\Tabler\css\dashboard.css" />
+    <Content Include="Content\Tabler\css\dashboard.rtl.css" />
+    <Content Include="Content\Tabler\fonts\feather\feather-webfont.svg" />
+    <Content Include="Content\Tabler\images\browsers\android-browser.svg" />
+    <Content Include="Content\Tabler\images\browsers\aol-explorer.svg" />
+    <Content Include="Content\Tabler\images\browsers\blackberry.svg" />
+    <Content Include="Content\Tabler\images\browsers\camino.svg" />
+    <Content Include="Content\Tabler\images\browsers\chrome.svg" />
+    <Content Include="Content\Tabler\images\browsers\chromium.svg" />
+    <Content Include="Content\Tabler\images\browsers\dolphin.svg" />
+    <Content Include="Content\Tabler\images\browsers\edge.svg" />
+    <Content Include="Content\Tabler\images\browsers\firefox.svg" />
+    <Content Include="Content\Tabler\images\browsers\ie.svg" />
+    <Content Include="Content\Tabler\images\browsers\maxthon.svg" />
+    <Content Include="Content\Tabler\images\browsers\mozilla.svg" />
+    <Content Include="Content\Tabler\images\browsers\netscape.svg" />
+    <Content Include="Content\Tabler\images\browsers\opera.svg" />
+    <Content Include="Content\Tabler\images\browsers\safari.svg" />
+    <Content Include="Content\Tabler\images\browsers\sleipnir.svg" />
+    <Content Include="Content\Tabler\images\browsers\uc-browser.svg" />
+    <Content Include="Content\Tabler\images\browsers\vivaldi.svg" />
+    <Content Include="Content\Tabler\images\crypto-currencies\bitcoin.svg" />
+    <Content Include="Content\Tabler\images\crypto-currencies\cardano.svg" />
+    <Content Include="Content\Tabler\images\crypto-currencies\dash.svg" />
+    <Content Include="Content\Tabler\images\crypto-currencies\eos.svg" />
+    <Content Include="Content\Tabler\images\crypto-currencies\ethereum.svg" />
+    <Content Include="Content\Tabler\images\crypto-currencies\litecoin.svg" />
+    <Content Include="Content\Tabler\images\crypto-currencies\nem.svg" />
+    <Content Include="Content\Tabler\images\crypto-currencies\ripple.svg" />
+    <Content Include="Content\Tabler\images\flags\ad.svg" />
+    <Content Include="Content\Tabler\images\flags\ae.svg" />
+    <Content Include="Content\Tabler\images\flags\af.svg" />
+    <Content Include="Content\Tabler\images\flags\ag.svg" />
+    <Content Include="Content\Tabler\images\flags\ai.svg" />
+    <Content Include="Content\Tabler\images\flags\al.svg" />
+    <Content Include="Content\Tabler\images\flags\am.svg" />
+    <Content Include="Content\Tabler\images\flags\ao.svg" />
+    <Content Include="Content\Tabler\images\flags\aq.svg" />
+    <Content Include="Content\Tabler\images\flags\ar.svg" />
+    <Content Include="Content\Tabler\images\flags\as.svg" />
+    <Content Include="Content\Tabler\images\flags\at.svg" />
+    <Content Include="Content\Tabler\images\flags\au.svg" />
+    <Content Include="Content\Tabler\images\flags\aw.svg" />
+    <Content Include="Content\Tabler\images\flags\ax.svg" />
+    <Content Include="Content\Tabler\images\flags\az.svg" />
+    <Content Include="Content\Tabler\images\flags\ba.svg" />
+    <Content Include="Content\Tabler\images\flags\bb.svg" />
+    <Content Include="Content\Tabler\images\flags\bd.svg" />
+    <Content Include="Content\Tabler\images\flags\be.svg" />
+    <Content Include="Content\Tabler\images\flags\bf.svg" />
+    <Content Include="Content\Tabler\images\flags\bg.svg" />
+    <Content Include="Content\Tabler\images\flags\bh.svg" />
+    <Content Include="Content\Tabler\images\flags\bi.svg" />
+    <Content Include="Content\Tabler\images\flags\bj.svg" />
+    <Content Include="Content\Tabler\images\flags\bl.svg" />
+    <Content Include="Content\Tabler\images\flags\bm.svg" />
+    <Content Include="Content\Tabler\images\flags\bn.svg" />
+    <Content Include="Content\Tabler\images\flags\bo.svg" />
+    <Content Include="Content\Tabler\images\flags\bq.svg" />
+    <Content Include="Content\Tabler\images\flags\br.svg" />
+    <Content Include="Content\Tabler\images\flags\bs.svg" />
+    <Content Include="Content\Tabler\images\flags\bt.svg" />
+    <Content Include="Content\Tabler\images\flags\bv.svg" />
+    <Content Include="Content\Tabler\images\flags\bw.svg" />
+    <Content Include="Content\Tabler\images\flags\by.svg" />
+    <Content Include="Content\Tabler\images\flags\bz.svg" />
+    <Content Include="Content\Tabler\images\flags\ca.svg" />
+    <Content Include="Content\Tabler\images\flags\cc.svg" />
+    <Content Include="Content\Tabler\images\flags\cd.svg" />
+    <Content Include="Content\Tabler\images\flags\cf.svg" />
+    <Content Include="Content\Tabler\images\flags\cg.svg" />
+    <Content Include="Content\Tabler\images\flags\ch.svg" />
+    <Content Include="Content\Tabler\images\flags\ci.svg" />
+    <Content Include="Content\Tabler\images\flags\ck.svg" />
+    <Content Include="Content\Tabler\images\flags\cl.svg" />
+    <Content Include="Content\Tabler\images\flags\cm.svg" />
+    <Content Include="Content\Tabler\images\flags\cn.svg" />
+    <Content Include="Content\Tabler\images\flags\co.svg" />
+    <Content Include="Content\Tabler\images\flags\cr.svg" />
+    <Content Include="Content\Tabler\images\flags\cu.svg" />
+    <Content Include="Content\Tabler\images\flags\cv.svg" />
+    <Content Include="Content\Tabler\images\flags\cw.svg" />
+    <Content Include="Content\Tabler\images\flags\cx.svg" />
+    <Content Include="Content\Tabler\images\flags\cy.svg" />
+    <Content Include="Content\Tabler\images\flags\cz.svg" />
+    <Content Include="Content\Tabler\images\flags\de.svg" />
+    <Content Include="Content\Tabler\images\flags\dj.svg" />
+    <Content Include="Content\Tabler\images\flags\dk.svg" />
+    <Content Include="Content\Tabler\images\flags\dm.svg" />
+    <Content Include="Content\Tabler\images\flags\do.svg" />
+    <Content Include="Content\Tabler\images\flags\dz.svg" />
+    <Content Include="Content\Tabler\images\flags\ec.svg" />
+    <Content Include="Content\Tabler\images\flags\ee.svg" />
+    <Content Include="Content\Tabler\images\flags\eg.svg" />
+    <Content Include="Content\Tabler\images\flags\eh.svg" />
+    <Content Include="Content\Tabler\images\flags\er.svg" />
+    <Content Include="Content\Tabler\images\flags\es.svg" />
+    <Content Include="Content\Tabler\images\flags\et.svg" />
+    <Content Include="Content\Tabler\images\flags\eu.svg" />
+    <Content Include="Content\Tabler\images\flags\fi.svg" />
+    <Content Include="Content\Tabler\images\flags\fj.svg" />
+    <Content Include="Content\Tabler\images\flags\fk.svg" />
+    <Content Include="Content\Tabler\images\flags\fm.svg" />
+    <Content Include="Content\Tabler\images\flags\fo.svg" />
+    <Content Include="Content\Tabler\images\flags\fr.svg" />
+    <Content Include="Content\Tabler\images\flags\ga.svg" />
+    <Content Include="Content\Tabler\images\flags\gb-eng.svg" />
+    <Content Include="Content\Tabler\images\flags\gb-nir.svg" />
+    <Content Include="Content\Tabler\images\flags\gb-sct.svg" />
+    <Content Include="Content\Tabler\images\flags\gb-wls.svg" />
+    <Content Include="Content\Tabler\images\flags\gb.svg" />
+    <Content Include="Content\Tabler\images\flags\gd.svg" />
+    <Content Include="Content\Tabler\images\flags\ge.svg" />
+    <Content Include="Content\Tabler\images\flags\gf.svg" />
+    <Content Include="Content\Tabler\images\flags\gg.svg" />
+    <Content Include="Content\Tabler\images\flags\gh.svg" />
+    <Content Include="Content\Tabler\images\flags\gi.svg" />
+    <Content Include="Content\Tabler\images\flags\gl.svg" />
+    <Content Include="Content\Tabler\images\flags\gm.svg" />
+    <Content Include="Content\Tabler\images\flags\gn.svg" />
+    <Content Include="Content\Tabler\images\flags\gp.svg" />
+    <Content Include="Content\Tabler\images\flags\gq.svg" />
+    <Content Include="Content\Tabler\images\flags\gr.svg" />
+    <Content Include="Content\Tabler\images\flags\gs.svg" />
+    <Content Include="Content\Tabler\images\flags\gt.svg" />
+    <Content Include="Content\Tabler\images\flags\gu.svg" />
+    <Content Include="Content\Tabler\images\flags\gw.svg" />
+    <Content Include="Content\Tabler\images\flags\gy.svg" />
+    <Content Include="Content\Tabler\images\flags\hk.svg" />
+    <Content Include="Content\Tabler\images\flags\hm.svg" />
+    <Content Include="Content\Tabler\images\flags\hn.svg" />
+    <Content Include="Content\Tabler\images\flags\hr.svg" />
+    <Content Include="Content\Tabler\images\flags\ht.svg" />
+    <Content Include="Content\Tabler\images\flags\hu.svg" />
+    <Content Include="Content\Tabler\images\flags\id.svg" />
+    <Content Include="Content\Tabler\images\flags\ie.svg" />
+    <Content Include="Content\Tabler\images\flags\il.svg" />
+    <Content Include="Content\Tabler\images\flags\im.svg" />
+    <Content Include="Content\Tabler\images\flags\in.svg" />
+    <Content Include="Content\Tabler\images\flags\io.svg" />
+    <Content Include="Content\Tabler\images\flags\iq.svg" />
+    <Content Include="Content\Tabler\images\flags\ir.svg" />
+    <Content Include="Content\Tabler\images\flags\is.svg" />
+    <Content Include="Content\Tabler\images\flags\it.svg" />
+    <Content Include="Content\Tabler\images\flags\je.svg" />
+    <Content Include="Content\Tabler\images\flags\jm.svg" />
+    <Content Include="Content\Tabler\images\flags\jo.svg" />
+    <Content Include="Content\Tabler\images\flags\jp.svg" />
+    <Content Include="Content\Tabler\images\flags\ke.svg" />
+    <Content Include="Content\Tabler\images\flags\kg.svg" />
+    <Content Include="Content\Tabler\images\flags\kh.svg" />
+    <Content Include="Content\Tabler\images\flags\ki.svg" />
+    <Content Include="Content\Tabler\images\flags\km.svg" />
+    <Content Include="Content\Tabler\images\flags\kn.svg" />
+    <Content Include="Content\Tabler\images\flags\kp.svg" />
+    <Content Include="Content\Tabler\images\flags\kr.svg" />
+    <Content Include="Content\Tabler\images\flags\kw.svg" />
+    <Content Include="Content\Tabler\images\flags\ky.svg" />
+    <Content Include="Content\Tabler\images\flags\kz.svg" />
+    <Content Include="Content\Tabler\images\flags\la.svg" />
+    <Content Include="Content\Tabler\images\flags\lb.svg" />
+    <Content Include="Content\Tabler\images\flags\lc.svg" />
+    <Content Include="Content\Tabler\images\flags\li.svg" />
+    <Content Include="Content\Tabler\images\flags\lk.svg" />
+    <Content Include="Content\Tabler\images\flags\lr.svg" />
+    <Content Include="Content\Tabler\images\flags\ls.svg" />
+    <Content Include="Content\Tabler\images\flags\lt.svg" />
+    <Content Include="Content\Tabler\images\flags\lu.svg" />
+    <Content Include="Content\Tabler\images\flags\lv.svg" />
+    <Content Include="Content\Tabler\images\flags\ly.svg" />
+    <Content Include="Content\Tabler\images\flags\ma.svg" />
+    <Content Include="Content\Tabler\images\flags\mc.svg" />
+    <Content Include="Content\Tabler\images\flags\md.svg" />
+    <Content Include="Content\Tabler\images\flags\me.svg" />
+    <Content Include="Content\Tabler\images\flags\mf.svg" />
+    <Content Include="Content\Tabler\images\flags\mg.svg" />
+    <Content Include="Content\Tabler\images\flags\mh.svg" />
+    <Content Include="Content\Tabler\images\flags\mk.svg" />
+    <Content Include="Content\Tabler\images\flags\ml.svg" />
+    <Content Include="Content\Tabler\images\flags\mm.svg" />
+    <Content Include="Content\Tabler\images\flags\mn.svg" />
+    <Content Include="Content\Tabler\images\flags\mo.svg" />
+    <Content Include="Content\Tabler\images\flags\mp.svg" />
+    <Content Include="Content\Tabler\images\flags\mq.svg" />
+    <Content Include="Content\Tabler\images\flags\mr.svg" />
+    <Content Include="Content\Tabler\images\flags\ms.svg" />
+    <Content Include="Content\Tabler\images\flags\mt.svg" />
+    <Content Include="Content\Tabler\images\flags\mu.svg" />
+    <Content Include="Content\Tabler\images\flags\mv.svg" />
+    <Content Include="Content\Tabler\images\flags\mw.svg" />
+    <Content Include="Content\Tabler\images\flags\mx.svg" />
+    <Content Include="Content\Tabler\images\flags\my.svg" />
+    <Content Include="Content\Tabler\images\flags\mz.svg" />
+    <Content Include="Content\Tabler\images\flags\na.svg" />
+    <Content Include="Content\Tabler\images\flags\nc.svg" />
+    <Content Include="Content\Tabler\images\flags\ne.svg" />
+    <Content Include="Content\Tabler\images\flags\nf.svg" />
+    <Content Include="Content\Tabler\images\flags\ng.svg" />
+    <Content Include="Content\Tabler\images\flags\ni.svg" />
+    <Content Include="Content\Tabler\images\flags\nl.svg" />
+    <Content Include="Content\Tabler\images\flags\no.svg" />
+    <Content Include="Content\Tabler\images\flags\np.svg" />
+    <Content Include="Content\Tabler\images\flags\nr.svg" />
+    <Content Include="Content\Tabler\images\flags\nu.svg" />
+    <Content Include="Content\Tabler\images\flags\nz.svg" />
+    <Content Include="Content\Tabler\images\flags\om.svg" />
+    <Content Include="Content\Tabler\images\flags\pa.svg" />
+    <Content Include="Content\Tabler\images\flags\pe.svg" />
+    <Content Include="Content\Tabler\images\flags\pf.svg" />
+    <Content Include="Content\Tabler\images\flags\pg.svg" />
+    <Content Include="Content\Tabler\images\flags\ph.svg" />
+    <Content Include="Content\Tabler\images\flags\pk.svg" />
+    <Content Include="Content\Tabler\images\flags\pl.svg" />
+    <Content Include="Content\Tabler\images\flags\pm.svg" />
+    <Content Include="Content\Tabler\images\flags\pn.svg" />
+    <Content Include="Content\Tabler\images\flags\pr.svg" />
+    <Content Include="Content\Tabler\images\flags\ps.svg" />
+    <Content Include="Content\Tabler\images\flags\pt.svg" />
+    <Content Include="Content\Tabler\images\flags\pw.svg" />
+    <Content Include="Content\Tabler\images\flags\py.svg" />
+    <Content Include="Content\Tabler\images\flags\qa.svg" />
+    <Content Include="Content\Tabler\images\flags\re.svg" />
+    <Content Include="Content\Tabler\images\flags\ro.svg" />
+    <Content Include="Content\Tabler\images\flags\rs.svg" />
+    <Content Include="Content\Tabler\images\flags\ru.svg" />
+    <Content Include="Content\Tabler\images\flags\rw.svg" />
+    <Content Include="Content\Tabler\images\flags\sa.svg" />
+    <Content Include="Content\Tabler\images\flags\sb.svg" />
+    <Content Include="Content\Tabler\images\flags\sc.svg" />
+    <Content Include="Content\Tabler\images\flags\sd.svg" />
+    <Content Include="Content\Tabler\images\flags\se.svg" />
+    <Content Include="Content\Tabler\images\flags\sg.svg" />
+    <Content Include="Content\Tabler\images\flags\sh.svg" />
+    <Content Include="Content\Tabler\images\flags\si.svg" />
+    <Content Include="Content\Tabler\images\flags\sj.svg" />
+    <Content Include="Content\Tabler\images\flags\sk.svg" />
+    <Content Include="Content\Tabler\images\flags\sl.svg" />
+    <Content Include="Content\Tabler\images\flags\sm.svg" />
+    <Content Include="Content\Tabler\images\flags\sn.svg" />
+    <Content Include="Content\Tabler\images\flags\so.svg" />
+    <Content Include="Content\Tabler\images\flags\sr.svg" />
+    <Content Include="Content\Tabler\images\flags\ss.svg" />
+    <Content Include="Content\Tabler\images\flags\st.svg" />
+    <Content Include="Content\Tabler\images\flags\sv.svg" />
+    <Content Include="Content\Tabler\images\flags\sx.svg" />
+    <Content Include="Content\Tabler\images\flags\sy.svg" />
+    <Content Include="Content\Tabler\images\flags\sz.svg" />
+    <Content Include="Content\Tabler\images\flags\tc.svg" />
+    <Content Include="Content\Tabler\images\flags\td.svg" />
+    <Content Include="Content\Tabler\images\flags\tf.svg" />
+    <Content Include="Content\Tabler\images\flags\tg.svg" />
+    <Content Include="Content\Tabler\images\flags\th.svg" />
+    <Content Include="Content\Tabler\images\flags\tj.svg" />
+    <Content Include="Content\Tabler\images\flags\tk.svg" />
+    <Content Include="Content\Tabler\images\flags\tl.svg" />
+    <Content Include="Content\Tabler\images\flags\tm.svg" />
+    <Content Include="Content\Tabler\images\flags\tn.svg" />
+    <Content Include="Content\Tabler\images\flags\to.svg" />
+    <Content Include="Content\Tabler\images\flags\tr.svg" />
+    <Content Include="Content\Tabler\images\flags\tt.svg" />
+    <Content Include="Content\Tabler\images\flags\tv.svg" />
+    <Content Include="Content\Tabler\images\flags\tw.svg" />
+    <Content Include="Content\Tabler\images\flags\tz.svg" />
+    <Content Include="Content\Tabler\images\flags\ua.svg" />
+    <Content Include="Content\Tabler\images\flags\ug.svg" />
+    <Content Include="Content\Tabler\images\flags\um.svg" />
+    <Content Include="Content\Tabler\images\flags\un.svg" />
+    <Content Include="Content\Tabler\images\flags\us.svg" />
+    <Content Include="Content\Tabler\images\flags\uy.svg" />
+    <Content Include="Content\Tabler\images\flags\uz.svg" />
+    <Content Include="Content\Tabler\images\flags\va.svg" />
+    <Content Include="Content\Tabler\images\flags\vc.svg" />
+    <Content Include="Content\Tabler\images\flags\ve.svg" />
+    <Content Include="Content\Tabler\images\flags\vg.svg" />
+    <Content Include="Content\Tabler\images\flags\vi.svg" />
+    <Content Include="Content\Tabler\images\flags\vn.svg" />
+    <Content Include="Content\Tabler\images\flags\vu.svg" />
+    <Content Include="Content\Tabler\images\flags\wf.svg" />
+    <Content Include="Content\Tabler\images\flags\ws.svg" />
+    <Content Include="Content\Tabler\images\flags\ye.svg" />
+    <Content Include="Content\Tabler\images\flags\yt.svg" />
+    <Content Include="Content\Tabler\images\flags\za.svg" />
+    <Content Include="Content\Tabler\images\flags\zm.svg" />
+    <Content Include="Content\Tabler\images\flags\zw.svg" />
+    <Content Include="Content\Tabler\images\payments\2checkout-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\2checkout.svg" />
+    <Content Include="Content\Tabler\images\payments\alipay-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\alipay.svg" />
+    <Content Include="Content\Tabler\images\payments\amazon-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\amazon.svg" />
+    <Content Include="Content\Tabler\images\payments\americanexpress-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\americanexpress.svg" />
+    <Content Include="Content\Tabler\images\payments\applepay-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\applepay.svg" />
+    <Content Include="Content\Tabler\images\payments\bancontact-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\bancontact.svg" />
+    <Content Include="Content\Tabler\images\payments\bitcoin-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\bitcoin.svg" />
+    <Content Include="Content\Tabler\images\payments\bitpay-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\bitpay.svg" />
+    <Content Include="Content\Tabler\images\payments\cirrus-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\cirrus.svg" />
+    <Content Include="Content\Tabler\images\payments\clickandbuy-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\clickandbuy.svg" />
+    <Content Include="Content\Tabler\images\payments\coinkite-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\coinkite.svg" />
+    <Content Include="Content\Tabler\images\payments\dinersclub-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\dinersclub.svg" />
+    <Content Include="Content\Tabler\images\payments\directdebit-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\directdebit.svg" />
+    <Content Include="Content\Tabler\images\payments\discover-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\discover.svg" />
+    <Content Include="Content\Tabler\images\payments\dwolla-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\dwolla.svg" />
+    <Content Include="Content\Tabler\images\payments\ebay-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\ebay.svg" />
+    <Content Include="Content\Tabler\images\payments\eway-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\eway.svg" />
+    <Content Include="Content\Tabler\images\payments\giropay-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\giropay.svg" />
+    <Content Include="Content\Tabler\images\payments\googlewallet-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\googlewallet.svg" />
+    <Content Include="Content\Tabler\images\payments\ingenico-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\ingenico.svg" />
+    <Content Include="Content\Tabler\images\payments\jcb-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\jcb.svg" />
+    <Content Include="Content\Tabler\images\payments\klarna-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\klarna.svg" />
+    <Content Include="Content\Tabler\images\payments\laser-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\laser.svg" />
+    <Content Include="Content\Tabler\images\payments\maestro-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\maestro.svg" />
+    <Content Include="Content\Tabler\images\payments\mastercard-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\mastercard.svg" />
+    <Content Include="Content\Tabler\images\payments\monero-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\monero.svg" />
+    <Content Include="Content\Tabler\images\payments\neteller-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\neteller.svg" />
+    <Content Include="Content\Tabler\images\payments\ogone-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\ogone.svg" />
+    <Content Include="Content\Tabler\images\payments\okpay-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\okpay.svg" />
+    <Content Include="Content\Tabler\images\payments\paybox-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\paybox.svg" />
+    <Content Include="Content\Tabler\images\payments\paymill-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\paymill.svg" />
+    <Content Include="Content\Tabler\images\payments\payone-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\payone.svg" />
+    <Content Include="Content\Tabler\images\payments\payoneer-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\payoneer.svg" />
+    <Content Include="Content\Tabler\images\payments\paypal-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\paypal.svg" />
+    <Content Include="Content\Tabler\images\payments\paysafecard-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\paysafecard.svg" />
+    <Content Include="Content\Tabler\images\payments\payu-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\payu.svg" />
+    <Content Include="Content\Tabler\images\payments\payza-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\payza.svg" />
+    <Content Include="Content\Tabler\images\payments\ripple-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\ripple.svg" />
+    <Content Include="Content\Tabler\images\payments\sage-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\sage.svg" />
+    <Content Include="Content\Tabler\images\payments\sepa-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\sepa.svg" />
+    <Content Include="Content\Tabler\images\payments\shopify-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\shopify.svg" />
+    <Content Include="Content\Tabler\images\payments\skrill-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\skrill.svg" />
+    <Content Include="Content\Tabler\images\payments\solo-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\solo.svg" />
+    <Content Include="Content\Tabler\images\payments\square-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\square.svg" />
+    <Content Include="Content\Tabler\images\payments\stripe-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\stripe.svg" />
+    <Content Include="Content\Tabler\images\payments\switch-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\switch.svg" />
+    <Content Include="Content\Tabler\images\payments\ukash-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\ukash.svg" />
+    <Content Include="Content\Tabler\images\payments\unionpay-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\unionpay.svg" />
+    <Content Include="Content\Tabler\images\payments\verifone-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\verifone.svg" />
+    <Content Include="Content\Tabler\images\payments\verisign-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\verisign.svg" />
+    <Content Include="Content\Tabler\images\payments\visa-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\visa.svg" />
+    <Content Include="Content\Tabler\images\payments\webmoney-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\webmoney.svg" />
+    <Content Include="Content\Tabler\images\payments\westernunion-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\westernunion.svg" />
+    <Content Include="Content\Tabler\images\payments\worldpay-dark.svg" />
+    <Content Include="Content\Tabler\images\payments\worldpay.svg" />
+    <Content Include="Content\Tabler\js\core.js" />
+    <Content Include="Content\Tabler\js\dashboard.js" />
+    <Content Include="Content\Tabler\js\require.min.js" />
+    <Content Include="Content\Tabler\js\vendors\bootstrap.bundle.min.js" />
+    <Content Include="Content\Tabler\js\vendors\chart.bundle.min.js" />
+    <Content Include="Content\Tabler\js\vendors\circle-progress.min.js" />
+    <Content Include="Content\Tabler\js\vendors\jquery-3.2.1.min.js" />
+    <Content Include="Content\Tabler\js\vendors\jquery-3.2.1.slim.min.js" />
+    <Content Include="Content\Tabler\js\vendors\jquery-jvectormap-2.0.3.min.js" />
+    <Content Include="Content\Tabler\js\vendors\jquery-jvectormap-de-merc.js" />
+    <Content Include="Content\Tabler\js\vendors\jquery-jvectormap-world-mill.js" />
+    <Content Include="Content\Tabler\js\vendors\jquery.sparkline.min.js" />
+    <Content Include="Content\Tabler\js\vendors\jquery.tablesorter.min.js" />
+    <Content Include="Content\Tabler\js\vendors\selectize.min.js" />
+    <Content Include="Content\Tabler\plugins\charts-c3\js\c3.min.js" />
+    <Content Include="Content\Tabler\plugins\charts-c3\js\d3.v3.min.js" />
+    <Content Include="Content\Tabler\plugins\charts-c3\plugin.css" />
+    <Content Include="Content\Tabler\plugins\charts-c3\plugin.js" />
+    <Content Include="Content\Tabler\plugins\fullcalendar\js\fullcalendar.min.js" />
+    <Content Include="Content\Tabler\plugins\fullcalendar\js\moment.min.js" />
+    <Content Include="Content\Tabler\plugins\fullcalendar\plugin.css" />
+    <Content Include="Content\Tabler\plugins\fullcalendar\plugin.js" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\materialdesignicons\materialdesignicons-webfont.svg" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\simple-line-icons\Simple-Line-Icons.svg" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\themify\themify.svg" />
+    <Content Include="Content\Tabler\plugins\iconfonts\fonts\weathericons\weathericons-regular-webfont.svg" />
+    <Content Include="Content\Tabler\plugins\iconfonts\plugin.css" />
+    <Content Include="Content\Tabler\plugins\input-mask\js\jquery.mask.min.js" />
+    <Content Include="Content\Tabler\plugins\input-mask\plugin.js" />
+    <Content Include="Content\Tabler\plugins\maps-google\plugin.css" />
+    <Content Include="Content\Tabler\plugins\maps-google\plugin.js" />
+    <Content Include="Content\Tabler\plugins\prismjs\js\prism.pack.js" />
+    <Content Include="Content\Tabler\plugins\prismjs\plugin.css" />
+    <Content Include="Content\Tabler\plugins\prismjs\plugin.js" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52790</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52790/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
