@@ -1,0 +1,14 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+before_build:
+- cmd: nuget restore Tabler.sln
+build:
+  publish_nuget: true
+  include_nuget_references: true
+  verbosity: minimal
+  project: Tabler.sln
+deploy:
+- provider: NuGet
+  api_key:
+    secure: vah+Z7lMeU68cmOOE7sWt68IwpFSCs6XU4ZOxbNTFDCex0xaFASBQ7q5N2EYe3oT
+  skip_symbols: true
