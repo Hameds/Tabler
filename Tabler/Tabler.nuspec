@@ -10,9 +10,12 @@
     <projectUrl>https://github.com/Hameds/Tabler</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/Hameds/Tabler/master/tabler-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Tabler Dashboard UI Kit</description>
+    <description>Tabler (https://tabler.github.io/) is free premium and Open Source dashboard template with responsive and high quality UI and this package contains Tabler files and sample layout for ASP.NET MVC projects</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2018</copyright>
-    <tags></tags>
+    <tags>AdminUI Tabler AdminDashboard DashboardTemplate Bootstrap4</tags>
   </metadata>
+  <files>
+    <file src="readme.txt" target="" />
+  </files>
 </package>
