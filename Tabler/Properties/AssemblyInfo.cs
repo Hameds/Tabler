@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Tabler")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Tabler is free premium and Open Source dashboard template with responsive and high quality UI and this package contains Tabler files and sample layout for ASP.NET MVC projects")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Tabler")]
@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("0.0.30.0")]
-[assembly: AssemblyFileVersion("0.0.30.0")]
+[assembly: AssemblyVersion("0.0.32.0")]
+[assembly: AssemblyFileVersion("0.0.32.0")]
